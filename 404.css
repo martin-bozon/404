@@ -1,0 +1,100 @@
+@font-face
+    {
+        font-family: "FakeBoss";
+        src: url("Fake Boss.ttf");
+        src: url("Fake Boss.otf");
+    }
+@font-face
+    {
+        font-family: "Philosophy";
+        src: url("Philosophy.ttf");
+    }
+html
+    {
+        background-image: url("penseurbg.png");
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+body
+    {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        justify-content: space-between;
+        font-family: "FakeBoss";
+        flex-grow:1;
+    }
+main
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        flex-grow: 0.6;
+        align-self: flex-start;
+        align-items: center;
+    }
+h1
+    {
+        margin: 0;
+        width: 60vw;
+        display: flex;
+        justify-content: center;
+        font-size: 50px;
+    }
+p
+    {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        font-size: 35px;
+    }
+#question
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+#point
+    {
+        color: #0391CC;
+    }
+#texte
+    {
+        display: none;
+    }
+
+#question:hover #texte
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        position: absolute;
+        left: -10px;
+        color: red;
+        font-family: "Philosophy";
+    }
+
+#question:hover #point
+    {
+        opacity:0;
+    }
+
+footer
+    {
+        display: flex;
+        justify-content: center;
+        font-size: 25px;
+    }
+footer a
+    {
+        text-decoration: none;
+        color: #0391CC;
+    }
+footer a:hover
+    {
+        color: red;
+    }
